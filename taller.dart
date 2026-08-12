@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'functions/listarLibro.dart';
+import 'functions/addBook.dart';
 
 void main() {
   List<Map<String, dynamic>> libros = [];
@@ -13,9 +14,9 @@ void main() {
     String? opcion = stdin.readLineSync();
 
     switch (opcion) {
-      /* case '1':
+      case '1':
         agregarLibro(libros);
-        break; */
+        break;
       case '2':
         listarLibros(libros);
         break;
@@ -26,11 +27,11 @@ void main() {
         eliminarLibro(libros);
         break; */
       case '5':
-        print('¡Hasta luego!');
+        print('Chao Gonorrea');
         activo = false;
         break;
       default:
-        print('Opción inválida. Intenta de nuevo.');
+        print('Opción invalida, intenta de nuevo');
     }
   }
 }
