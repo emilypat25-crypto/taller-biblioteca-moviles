@@ -1,6 +1,8 @@
 import 'dart:io';
+import 'functions/actualizarlibro.dart';
 import 'functions/listarLibro.dart';
 import 'functions/addBook.dart';
+import 'functions/eliminarLibro.dart';
 
 void main() {
   List<Map<String, dynamic>> libros = [];
@@ -20,12 +22,12 @@ void main() {
       case '2':
         listarLibros(libros);
         break;
-      /*   case '3':
+      case '3':
         actualizarLibro(libros);
         break;
       case '4':
         eliminarLibro(libros);
-        break; */
+        break;
       case '5':
         print('Chao Gonorrea');
         activo = false;
